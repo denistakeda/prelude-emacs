@@ -72,13 +72,24 @@
     ;; make some use of the Super key
     (define-key map (kbd "s-g") 'god-local-mode)
     (define-key map (kbd "s-r") 'crux-recentf-ido-find-file)
-    (define-key map (kbd "s-j") 'crux-top-join-line)
-    (define-key map (kbd "s-k") 'crux-kill-whole-line)
+    ;;(define-key map (kbd "s-j") 'crux-top-join-line)
+    ;;(define-key map (kbd "s-k") 'crux-kill-whole-line)
     (define-key map (kbd "s-m m") 'magit-status)
     (define-key map (kbd "s-m l") 'magit-log)
     (define-key map (kbd "s-m f") 'magit-log-buffer-file)
     (define-key map (kbd "s-m b") 'magit-blame)
-    (define-key map (kbd "s-o") 'crux-smart-open-line-above)
+    ;;(define-key map (kbd "s-o") 'crux-smart-open-line-above)
+    ;; Navigation
+    (define-key map (kbd "s-l") 'forward-char)
+    (define-key map (kbd "s-j") 'backward-char)
+    (define-key map (kbd "s-k") 'next-line)
+    (define-key map (kbd "s-i") 'previous-line)
+
+    (define-key map (kbd "s-J") 'back-to-indentation)
+    (define-key map (kbd "s-L") 'move-end-of-line)
+
+    (define-key map (kbd "s-u") 'delete-backward-char)
+    (define-key map (kbd "s-o") 'delete-forward-char)
 
     map)
   "Keymap for Prelude mode.")
