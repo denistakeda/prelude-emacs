@@ -79,17 +79,6 @@
     (define-key map (kbd "s-m f") 'magit-log-buffer-file)
     (define-key map (kbd "s-m b") 'magit-blame)
     ;;(define-key map (kbd "s-o") 'crux-smart-open-line-above)
-    ;; Navigation
-    (define-key map (kbd "s-l") 'forward-char)
-    (define-key map (kbd "s-j") 'backward-char)
-    (define-key map (kbd "s-k") 'next-line)
-    (define-key map (kbd "s-i") 'previous-line)
-
-    (define-key map (kbd "s-J") 'back-to-indentation)
-    (define-key map (kbd "s-L") 'move-end-of-line)
-
-    (define-key map (kbd "s-u") 'delete-backward-char)
-    (define-key map (kbd "s-o") 'delete-forward-char)
 
     map)
   "Keymap for Prelude mode.")
