@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: impreact
+# key: impreact
+# --
+import * as React from 'react';
